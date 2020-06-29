@@ -79,6 +79,10 @@ ul {
 .logo-menu-contact li:not(:first-child) {
   margin-left: 30px;
 }
+.logo-menu-contact-icon {
+  width: 16px;
+  height: 11px;
+}
 /*Футер*/
 .footer {
   background: #2f303a;
@@ -127,6 +131,18 @@ ul {
   border: 1px solid black;
   border-radius: 100%;
 }
+.footer-social-1 {
+  background-image: url(../images/icon/Instagram.svg);
+}
+.footer-social-2 {
+  background-image: url(../images/icon/Twiter.svg);
+}
+.footer-social-3 {
+  background-image: url(../images/icon/Facebook.svg);
+}
+.footer-social-4 {
+  background-image: url(../images/icon/Linkedin.svg);
+}
 .footer-social li:not(:first-child) {
   margin-left: 10px;
 }
@@ -134,6 +150,7 @@ ul {
   background: #2196f3;
   color: var(--footer-color);
 }
+
 footer p {
   margin-bottom: 20px;
 }
@@ -150,9 +167,26 @@ footer p {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--footer-color);
+  display: inline-flex;
+  margin-top: auto;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.mail-bottom:hover,
+:focus {
+  cursor: pointer;
+}
+.mail-bottom::after {
+  width: 24px;
+  height: 24px;
+  content: ' ';
+  margin-left: 10px;
+  background-image: url(../images/icon/icon\send.svg);
+  background-size: contain;
+  background-position: center;
 }
 .mail-form {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -288,9 +322,16 @@ footer p {
 /*Основний index*/
 /*Банер*/
 .baner {
-  height: 600px;
-  background: rgba(47, 48, 58, 0.8);
-  padding: 200px 452px;
+  height: 660px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(0, 0, 0);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+    url(../images/Header.jpg);
+  padding-top: 200px;
+  background-size: cover;
+  background-position: center;
 }
 .baner-text {
   width: 646px;
@@ -322,6 +363,9 @@ footer p {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 /*Переваги*/
 .our-goods {
@@ -345,6 +389,38 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.our-goods-images-1 {
+  background-image: url(../images/icon/antenna-1.svg);
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.our-goods-images-2 {
+  background-image: url(../images/icon/clock-1.svg);
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.our-goods-images-3 {
+  background-image: url(../images/icon/diagram-1.svg);
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.our-goods-images-4 {
+  background-image: url(../images/icon/astronaut-1.svg);
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .our-goods-title {
   font-size: 14px;
@@ -451,11 +527,25 @@ footer p {
   align-items: center;
   justify-content: center;
 }
+.team-card-social-1 {
+  background-image: url(../images/icon/Instagram.svg);
+}
+.team-card-social-2 {
+  background-image: url(../images/icon/Twiter.svg);
+}
+.team-card-social-3 {
+  background-image: url(../images/icon/Facebook.svg);
+}
+.team-card-social-4 {
+  background-image: url(../images/icon/Linkedin.svg);
+}
 .team-card-social li a {
-  border: 1px solid black;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
 }
 .team-card-social li a:not(:first-child) {
   margin-left: 10px;
@@ -490,4 +580,29 @@ footer p {
 }
 .partner li:hover {
   border: 1px solid #2196f3;
+}
+.partner li a {
+  width: 170px;
+  height: 90px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.partner-icon-1 {
+  background-image: url(../images/icon/logo\1svg);
+}
+.partner-icon-2 {
+  background-image: url(../images/icon/logo\2svg);
+}
+.partner-icon-3 {
+  background-image: url(../images/icon/logo\3svg);
+}
+.partner-icon-4 {
+  background-image: url(../images/icon/logo\4svg);
+}
+.partner-icon-5 {
+  background-image: url(../images/icon/logo\5svg);
+}
+.partner-icon-6 {
+  background-image: url(../images/icon/logo\6svg);
 }
