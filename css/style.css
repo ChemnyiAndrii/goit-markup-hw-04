@@ -184,7 +184,7 @@ footer p {
   height: 24px;
   content: ' ';
   margin-left: 10px;
-  background-image: url(../images/icon/icon\send.svg);
+  background-image: url(../images/icon/icon-send.svg);
   background-size: contain;
   background-position: center;
 }
@@ -589,20 +589,20 @@ footer p {
   background-position: center;
 }
 .partner-icon-1 {
-  background-image: url(../images/icon/logo\1svg);
+  background-image: url(../images/icon/logo-1.svg);
 }
 .partner-icon-2 {
-  background-image: url(../images/icon/logo\2svg);
+  background-image: url(../images/icon/logo-2.svg);
 }
 .partner-icon-3 {
-  background-image: url(../images/icon/logo\3svg);
+  background-image: url(../images/icon/logo-3.svg);
 }
 .partner-icon-4 {
-  background-image: url(../images/icon/logo\4svg);
+  background-image: url(../images/icon/logo-4.svg);
 }
 .partner-icon-5 {
-  background-image: url(../images/icon/logo\5svg);
+  background-image: url(../images/icon/logo-5.svg);
 }
 .partner-icon-6 {
-  background-image: url(../images/icon/logo\6svg);
+  background-image: url(../images/icon/logo-6.svg);
 }
