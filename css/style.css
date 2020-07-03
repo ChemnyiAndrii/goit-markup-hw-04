@@ -59,12 +59,9 @@ ul {
   letter-spacing: 0.02em;
   margin-top: 32px;
   margin-bottom: 32px;
-}
-.logo-menu-contact li a {
   color: #757575;
 }
-.logo-menu li a:hover,
-.logo-menu-contact li a:hover {
+.logo-menu li a:hover {
   color: var(--nav-color);
 }
 .logo-menu,
@@ -79,9 +76,15 @@ ul {
 .logo-menu-contact li:not(:first-child) {
   margin-left: 30px;
 }
+.logo-menu-contact-conteiner{}
 .logo-menu-contact-icon {
   width: 16px;
   height: 11px;
+  fill: var(--grey-color);
+}
+.logo-menu-contact-conteiner :hover{
+  fill: var(--nav-color);
+  color: var(--nav-color);
 }
 /*Футер*/
 .footer {
@@ -125,32 +128,19 @@ ul {
 .footer-social-list {
   display: flex;
 }
-.footer-social li {
+.footer-social-icon{
+  background-color: rgba(255, 255, 255, 0.1);
   height: 44px;
   width: 44px;
-  border: 1px solid black;
   border-radius: 100%;
-}
-.footer-social-1 {
-  background-image: url(../images/icon/Instagram.svg);
-}
-.footer-social-2 {
-  background-image: url(../images/icon/Twiter.svg);
-}
-.footer-social-3 {
-  background-image: url(../images/icon/Facebook.svg);
-}
-.footer-social-4 {
-  background-image: url(../images/icon/Linkedin.svg);
+  fill:var(--footer-color);
 }
 .footer-social li:not(:first-child) {
   margin-left: 10px;
 }
-.footer-social li:hover {
+.footer-social-icon:hover {
   background: #2196f3;
-  color: var(--footer-color);
 }
-
 footer p {
   margin-bottom: 20px;
 }
@@ -266,7 +256,6 @@ footer p {
 }
 /*Проекти Портфоліо*/
 /*розкоментувати після того як зробити картинку фоном*/
-
 .project {
   font-size: 18px;
   line-height: 28px;
@@ -318,7 +307,6 @@ footer p {
   color: var(--footer-color);
   visibility: visible;
 }
-
 /*Основний index*/
 /*Банер*/
 .baner {
@@ -457,7 +445,6 @@ footer p {
 .we-do li {
   max-width: 370px;
   max-height: 294px;
-  border: 1px solid black;
 }
 .we-do li:not(:first-child) {
   margin-left: 30px;
@@ -478,13 +465,14 @@ footer p {
   text-align: center;
   padding-top: 27px;
 }
+.we-do img{
+  display: block;
+}
 /*НАша команда*/
 .team {
   background: #f5f4fa;
-
   padding: 94px;
 }
-
 .team-card {
   display: flex;
   align-items: center;
@@ -500,7 +488,7 @@ footer p {
   border-radius: 0px 0px 4px 4px;
 }
 .team-card li:not(:first-child) {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .team-card-title {
   font-style: normal;
@@ -520,39 +508,26 @@ footer p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--grey-color);
+  margin-bottom: 16px;
 }
 .team-card-social {
-  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 24px;
 }
-.team-card-social-1 {
-  background-image: url(../images/icon/Instagram.svg);
-}
-.team-card-social-2 {
-  background-image: url(../images/icon/Twiter.svg);
-}
-.team-card-social-3 {
-  background-image: url(../images/icon/Facebook.svg);
-}
-.team-card-social-4 {
-  background-image: url(../images/icon/Linkedin.svg);
-}
-.team-card-social li a {
-  width: 44px;
+.team-card-social svg{
   height: 44px;
+  width: 44px;
+  fill: #afb1b8
+}
+.team-card-social svg:hover{
+  fill: #FFFFFF;
+  background-color:#2196F3;
   border-radius: 50%;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
 }
 .team-card-social li a:not(:first-child) {
   margin-left: 10px;
-}
-.team-card-social a:hover {
-  background: #2196f3;
-  color: var(--footer-color);
 }
 /*наші партнери*/
 .client {
@@ -578,31 +553,43 @@ footer p {
 .partner li:not(:first-child) {
   margin-left: 30px;
 }
-.partner li:hover {
-  border: 1px solid #2196f3;
-}
-.partner li a {
+.partner-icon{
   width: 170px;
   height: 90px;
   display: inline-flex;
-  background-repeat: no-repeat;
-  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+.partner-icon svg{
+  fill:#afb1b8;
 }
 .partner-icon-1 {
-  background-image: url(../images/icon/logo-1.svg);
+  width: 44px;
+  height: 49px;
 }
 .partner-icon-2 {
-  background-image: url(../images/icon/logo-2.svg);
+  width: 40px;
+  height: 52px;
 }
 .partner-icon-3 {
-  background-image: url(../images/icon/logo-3.svg);
+  width: 41px;
+  height: 43px;
 }
 .partner-icon-4 {
-  background-image: url(../images/icon/logo-4.svg);
+  width: 80px;
+  height: 42px;
 }
 .partner-icon-5 {
-  background-image: url(../images/icon/logo-5.svg);
+  width: 59px;
+  height: 47px;
 }
 .partner-icon-6 {
-  background-image: url(../images/icon/logo-6.svg);
+  width: 88px;
+  height: 45px;
+}
+.partner li:hover{
+  border: 1px solid #2196f3;
+}
+.partner li:hover .partner-icon svg{
+  fill: #2196F3;
 }
